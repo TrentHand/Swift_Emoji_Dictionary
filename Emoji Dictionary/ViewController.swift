@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var mainTableView: UITableView!
+//    array to load emojis into the mainTableView table
+    var emojis = ["😇","🤡","😡","🤢","👻","🐒"]
     
     
     override func viewDidLoad() {
@@ -22,12 +24,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return emojis.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "😲"
+        //passing the array into the cells.  indexPath.row aligns the item at each index with a row and prints it accordingly
+        cell.textLabel?.text = emojis[indexPath.row]
         return cell
     }
     
