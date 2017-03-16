@@ -62,8 +62,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-Ni-C9y">
-                                <rect key="frame" x="103" y="351" width="169" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a lovely church" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-Ni-C9y">
+                                <rect key="frame" x="103" y="393" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aJ-De-kyp">
+                                <rect key="frame" x="122.5" y="434" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Created: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-R1-hmy">
+                                <rect key="frame" x="114" y="475" width="147" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,13 +84,19 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="C97-Bp-MvG" firstAttribute="centerX" secondItem="ctX-YL-2hv" secondAttribute="centerX" id="B8f-uq-Wwi"/>
+                            <constraint firstItem="7aJ-De-kyp" firstAttribute="top" secondItem="WrZ-Ni-C9y" secondAttribute="bottom" constant="20" id="K04-ud-mbs"/>
                             <constraint firstItem="WrZ-Ni-C9y" firstAttribute="centerX" secondItem="ctX-YL-2hv" secondAttribute="centerX" id="Khc-YL-2Nz"/>
                             <constraint firstItem="WrZ-Ni-C9y" firstAttribute="top" secondItem="C97-Bp-MvG" secondAttribute="bottom" constant="50" id="PEG-WG-6zx"/>
+                            <constraint firstItem="MdD-R1-hmy" firstAttribute="top" secondItem="7aJ-De-kyp" secondAttribute="bottom" constant="20" id="UOY-m7-1Yw"/>
+                            <constraint firstItem="7aJ-De-kyp" firstAttribute="centerX" secondItem="ctX-YL-2hv" secondAttribute="centerX" id="Vck-jG-OTS"/>
                             <constraint firstItem="C97-Bp-MvG" firstAttribute="top" secondItem="d05-9U-78e" secondAttribute="bottom" constant="40" id="i4A-Js-CCc"/>
+                            <constraint firstItem="MdD-R1-hmy" firstAttribute="centerX" secondItem="ctX-YL-2hv" secondAttribute="centerX" id="yAZ-Fa-q1B"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="EmojiLabel" destination="C97-Bp-MvG" id="QDx-AG-slO"/>
+                        <outlet property="birthYearLabel" destination="MdD-R1-hmy" id="qMp-qP-y0O"/>
+                        <outlet property="categoryLabel" destination="7aJ-De-kyp" id="j3H-a1-COC"/>
                         <outlet property="definitionLabel" destination="WrZ-Ni-C9y" id="vEn-Jy-hIe"/>
                     </connections>
                 </viewController>
